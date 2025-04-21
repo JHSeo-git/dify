@@ -13,7 +13,7 @@ html[data-theme="light"] {
   --color-components-input-text-filled-disabled: #676f83;
   --color-components-input-border-hover: #d0d5dc;
   --color-components-input-border-active-prompt-1: #0ba5ec;
-  --color-components-input-border-active-prompt-2: #155aef;
+  --color-components-input-border-active-prompt-2: #fc0373;
 
   --color-components-kbd-bg-gray: #1018280a;
   --color-components-kbd-bg-white: #ffffff1f;
@@ -21,7 +21,7 @@ html[data-theme="light"] {
   --color-components-tooltip-bg: #fffffff2;
 
   --color-components-button-primary-text: #ffffff;
-  --color-components-button-primary-bg: #155aef;
+  --color-components-button-primary-bg: #fc0373;
   --color-components-button-primary-border: #1018280a;
   --color-components-button-primary-bg-hover: #004aeb;
   --color-components-button-primary-border-hover: #10182814;
@@ -76,7 +76,7 @@ html[data-theme="light"] {
   --color-components-button-destructive-ghost-text-disabled: #f0443833;
   --color-components-button-destructive-ghost-bg-hover: #fee4e2;
 
-  --color-components-button-secondary-accent-text: #155aef;
+  --color-components-button-secondary-accent-text: #fc0373;
   --color-components-button-secondary-accent-text-disabled: #b2caff;
   --color-components-button-secondary-accent-bg: #ffffff;
   --color-components-button-secondary-accent-bg-hover: #f2f4f7;
@@ -91,7 +91,7 @@ html[data-theme="light"] {
 
   --color-components-checkbox-icon: #ffffff;
   --color-components-checkbox-icon-disabled: #ffffff80;
-  --color-components-checkbox-bg: #155aef;
+  --color-components-checkbox-bg: #fc0373;
   --color-components-checkbox-bg-hover: #004aeb;
   --color-components-checkbox-bg-disabled: #f2f4f7;
   --color-components-checkbox-border: #d0d5dc;
@@ -101,7 +101,7 @@ html[data-theme="light"] {
   --color-components-checkbox-bg-unchecked-hover: #ffffff;
   --color-components-checkbox-bg-disabled-checked: #b2caff;
 
-  --color-components-radio-border-checked: #155aef;
+  --color-components-radio-border-checked: #fc0373;
   --color-components-radio-border-checked-hover: #004aeb;
   --color-components-radio-border-checked-disabled: #b2caff;
   --color-components-radio-bg-disabled: #ffffff00;
@@ -113,7 +113,7 @@ html[data-theme="light"] {
 
   --color-components-toggle-knob: #ffffff;
   --color-components-toggle-knob-disabled: #fffffff2;
-  --color-components-toggle-bg: #155aef;
+  --color-components-toggle-bg: #fc0373;
   --color-components-toggle-bg-hover: #004aeb;
   --color-components-toggle-bg-disabled: #d1e0ff;
   --color-components-toggle-bg-unchecked: #e9ebf0;
@@ -147,7 +147,7 @@ html[data-theme="light"] {
   --color-components-panel-bg-transparent: #ffffff00;
 
   --color-components-main-nav-nav-button-text: #495464;
-  --color-components-main-nav-nav-button-text-active: #155aef;
+  --color-components-main-nav-nav-button-text-active: #fc0373;
   --color-components-main-nav-nav-button-bg: #ffffff00;
   --color-components-main-nav-nav-button-bg-active: #fcfcfd;
   --color-components-main-nav-nav-button-border: #fffffff2;
@@ -176,7 +176,7 @@ html[data-theme="light"] {
   --color-components-option-card-option-bg-hover: #ffffff;
   --color-components-option-card-option-border-hover: #d0d5dc;
 
-  --color-components-tab-active: #155aef;
+  --color-components-tab-active: #fc0373;
 
   --color-components-badge-white-to-dark: #ffffff;
   --color-components-badge-status-light-success-bg: #47cd89;
@@ -211,7 +211,7 @@ html[data-theme="light"] {
   --color-components-chart-line: #296dff;
   --color-components-chart-area-1: #155aef24;
   --color-components-chart-area-2: #155aef0a;
-  --color-components-chart-current-1: #155aef;
+  --color-components-chart-current-1: #fc0373;
   --color-components-chart-current-2: #d1e0ff;
   --color-components-chart-bg: #ffffff;
 
@@ -267,9 +267,9 @@ html[data-theme="light"] {
   --color-components-label-gray: #f2f4f7;
 
   --color-components-premium-badge-blue-bg-stop-0: #5289ff;
-  --color-components-premium-badge-blue-bg-stop-100: #155aef;
+  --color-components-premium-badge-blue-bg-stop-100: #fc0373;
   --color-components-premium-badge-blue-stroke-stop-0: #fffffff2;
-  --color-components-premium-badge-blue-stroke-stop-100: #155aef;
+  --color-components-premium-badge-blue-stroke-stop-100: #fc0373;
   --color-components-premium-badge-blue-text-stop-0: #f5f7ff;
   --color-components-premium-badge-blue-text-stop-100: #d1e0ff;
   --color-components-premium-badge-blue-glow: #00329e;
@@ -334,7 +334,7 @@ html[data-theme="light"] {
   --color-components-icon-bg-green-solid: #4ca30d;
   --color-components-icon-bg-teal-solid: #0e9384;
   --color-components-icon-bg-blue-light-solid: #0ba5ec;
-  --color-components-icon-bg-blue-solid: #155aef;
+  --color-components-icon-bg-blue-solid: #fc0373;
   --color-components-icon-bg-indigo-solid: #444ce7;
   --color-components-icon-bg-violet-solid: #7839ee;
   --color-components-icon-bg-midnight-solid: #828dad;
@@ -363,12 +363,12 @@ html[data-theme="light"] {
   --color-text-destructive-secondary: #f04438;
   --color-text-success-secondary: #17b26a;
   --color-text-warning-secondary: #f79009;
-  --color-text-accent: #155aef;
+  --color-text-accent: #fc0373;
   --color-text-primary-on-surface: #ffffff;
   --color-text-placeholder: #98a2b2;
   --color-text-disabled: #d0d5dc;
   --color-text-accent-secondary: #296dff;
-  --color-text-accent-light-mode-only: #155aef;
+  --color-text-accent-light-mode-only: #fc0373;
   --color-text-text-selected: #155aef24;
   --color-text-secondary-on-surface: #ffffffe6;
   --color-text-logo-text: #18222f;
@@ -619,7 +619,7 @@ html[data-theme="light"] {
   --color-util-colors-blue-brand-blue-brand-300: #84abff;
   --color-util-colors-blue-brand-blue-brand-400: #5289ff;
   --color-util-colors-blue-brand-blue-brand-500: #296dff;
-  --color-util-colors-blue-brand-blue-brand-600: #155aef;
+  --color-util-colors-blue-brand-blue-brand-600: #fc0373;
   --color-util-colors-blue-brand-blue-brand-700: #004aeb;
 
   --color-util-colors-red-red-50: #fef3f2;
@@ -735,5 +735,4 @@ html[data-theme="light"] {
 
   --color-saas-background: #fcfcfd;
   --color-saas-pricing-grid-bg: #c8ceda80;
-
 }

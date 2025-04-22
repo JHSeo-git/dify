@@ -27,7 +27,7 @@ pnpm install
 pnpm dev
 ```
 
-### 화면에서 Element 선택으로 코드로 이동
+### 참고: 화면에서 Element 선택으로 코드로 이동
 
 > https://github.com/zh-lx/code-inspector
 
@@ -57,11 +57,10 @@ cd ../api
 
 **ssrf_proxy: already use 3128 port**
 
-rancher desktop socket 용으로 이미 3128, 3129 port 등을 사용하고 있어 13128로 변경해서 사용.
+rancher desktop socket(또는 다른 이유)으로 인해 이미 3128 port를 사용하고 있어 `EXPOSE_SSRF_PROXY_PORT` 값을 13128로 변경해서 사용.
 
 ```bash
 # middleware.env
-SSRF_HTTP_PORT=13128
 EXPOSE_SSRF_PROXY_PORT=13128
 ```
 
@@ -69,13 +68,13 @@ EXPOSE_SSRF_PROXY_PORT=13128
 # docker-compose.middleware.yaml
 environment:
   # pls clearly modify the squid env vars to fit your network environment.
-  HTTP_PORT: ${SSRF_HTTP_PORT:-13128}
+  HTTP_PORT: ${SSRF_HTTP_PORT:-3128}
   COREDUMP_DIR: ${SSRF_COREDUMP_DIR:-/var/spool/squid}
   REVERSE_PROXY_PORT: ${SSRF_REVERSE_PROXY_PORT:-8194}
   SANDBOX_HOST: ${SSRF_SANDBOX_HOST:-sandbox}
   SANDBOX_PORT: ${SANDBOX_PORT:-8194}
 ports:
-  - "${EXPOSE_SSRF_PROXY_PORT:-13128}:${SSRF_HTTP_PORT:-13128}"
+  - "${EXPOSE_SSRF_PROXY_PORT:-13128}:${SSRF_HTTP_PORT:-3128}"
   - "${EXPOSE_SANDBOX_PORT:-8194}:${SANDBOX_PORT:-8194}"
 ```
 

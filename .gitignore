@@ -207,3 +207,8 @@ plugins.jsonl
 
 # mise
 mise.toml
+
+# ssl
+*.pem
+*.crt
+*.key

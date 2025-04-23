@@ -92,6 +92,17 @@ sed -i '' "/^SECRET_KEY=/c\\
 SECRET_KEY=${secret_key}" .env
 ```
 
+**ssl**
+
+private network에서는 ssrf_proxy 사용을 위한 SSL 설정이 필요합니다.  
+`.crt`(또는 `.pem`) 파일을 root path에 두고 아래 환경변수를 설정합니다.
+
+```bash
+# .env
+# company.pem 파일로 저장했다면
+SSL_CA_BUNDLE=/Users/user1/.../dify/api/company.pem
+```
+
 ### install
 
 ```bash

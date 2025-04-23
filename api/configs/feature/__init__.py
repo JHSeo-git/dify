@@ -387,6 +387,12 @@ class HttpConfig(BaseSettings):
         default=False,
     )
 
+    # SSL
+    SSL_CA_BUNDLE: Optional[str] = Field(
+        description="SSL CA bundle path",
+        default=None,
+    )
+
 
 class InnerAPIConfig(BaseSettings):
     """

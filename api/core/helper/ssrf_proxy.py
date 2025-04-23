@@ -3,6 +3,7 @@ Proxy requests to avoid SSRF
 """
 
 import logging
+import ssl
 import time
 
 import httpx
@@ -52,6 +53,12 @@ def make_request(method, url, max_retries=SSRF_DEFAULT_MAX_RETRIES, **kwargs):
         kwargs["ssl_verify"] = HTTP_REQUEST_NODE_SSL_VERIFY
 
     ssl_verify = kwargs.pop("ssl_verify")
+
+    if dify_config.SSL_CA_BUNDLE:
+        ctx = ssl.create_default_context()
+        ctx.load_verify_locations(cafile=dify_config.SSL_CA_BUNDLE)
+        ssl_verify = ctx
+
 
     retries = 0
     while retries <= max_retries:

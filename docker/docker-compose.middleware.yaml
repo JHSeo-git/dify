@@ -114,11 +114,23 @@ services:
       TENCENT_COS_SECRET_KEY: ${PLUGIN_TENCENT_COS_SECRET_KEY:-}
       TENCENT_COS_SECRET_ID: ${PLUGIN_TENCENT_COS_SECRET_ID:-}
       TENCENT_COS_REGION: ${PLUGIN_TENCENT_COS_REGION:-}
+      # custom
+      SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
+      REQUESTS_CA_BUNDLE: /usr/local/share/ca-certificates/extra/ex_ca.pem
+      UV_NATIVE_TLS: true
+      UV_INSECURE_HOST: "*"
     ports:
       - "${EXPOSE_PLUGIN_DAEMON_PORT:-5002}:${PLUGIN_DAEMON_PORT:-5002}"
       - "${EXPOSE_PLUGIN_DEBUGGING_PORT:-5003}:${PLUGIN_DEBUGGING_PORT:-5003}"
     volumes:
       - ./volumes/plugin_daemon:/app/storage
+      - ../certs/company.pem:/usr/local/share/ca-certificates/ex_ca.crt
+      - ../certs/company.pem:/usr/local/share/ca-certificates/extra/ex_ca.pem
+    entrypoint: /bin/bash
+    command:
+      - "-c"
+      - |
+        update-ca-certificates && exec /app/entrypoint.sh
 
   # ssrf_proxy server
   # for more information, please refer to
